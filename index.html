@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Interactive Quiz about Data Processing and IT Interfaces">
+    <title>Quiz: Data Processing & Interfaces</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📚 Quiz: Data Processing</h1>
+            <p>Test your knowledge about all topics!</p>
+        </div>
+
+        <div id="quiz-section">
+            <div class="progress-bar">
+                <div class="progress-fill" id="progress"></div>
+            </div>
+
+            <div class="question-container">
+                <div class="question-number" id="questionNumber"></div>
+                <div class="type-indicator" id="typeIndicator"></div>
+                <div class="question-text" id="question"></div>
+                <div class="options" id="options"></div>
+                <div class="feedback" id="feedback"></div>
+            </div>
+
+            <div class="buttons">
+                <button class="btn-next" id="btnNext" onclick="nextQuestion()">Next Question →</button>
+            </div>
+        </div>
+
+        <div id="results-section" class="results">
+            <h2>🎉 Quiz Complete!</h2>
+            <div class="score-box">
+                <div class="score-number" id="finalScore">0/0</div>
+                <div class="score-text">Points Earned</div>
+                <div class="grade" id="gradeText">EXCELLENT</div>
+            </div>
+
+            <div class="summary">
+                <div class="summary-item">
+                    <span class="summary-label">Correct Answers:</span>
+                    <span class="summary-value" id="correctCount">0</span>
+                </div>
+                <div class="summary-item">
+                    <span class="summary-label">Wrong Answers:</span>
+                    <span class="summary-value" id="wrongCount">0</span>
+                </div>
+                <div class="summary-item">
+                    <span class="summary-label">Success Rate:</span>
+                    <span class="summary-value" id="percentage">0%</span>
+                </div>
+                <div class="summary-item">
+                    <span class="summary-label">Topics Covered:</span>
+                    <span class="summary-value">14 Topics</span>
+                </div>
+            </div>
+
+            <div class="buttons">
+                <button class="btn-reset" onclick="resetQuiz()">🔄 Play Again</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="questions.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
