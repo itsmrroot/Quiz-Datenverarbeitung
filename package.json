@@ -1,1 +1,25 @@
 
+{
+  "name": "quiz-data-processing",
+  "version": "1.0.0",
+  "description": "Interactive Quiz about Data Processing and IT Interfaces",
+  "main": "index.html",
+  "scripts": {
+    "start": "open index.html",
+    "dev": "python3 -m http.server 8000"
+  },
+  "keywords": [
+    "quiz",
+    "data-processing",
+    "it",
+    "interfaces",
+    "education",
+    "learning"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/Quiz-Data-Processing.git"
+  }
+}
